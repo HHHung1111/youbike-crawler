@@ -1,0 +1,7 @@
+services:
+  - type: cron
+    name: youbike-crawler-job
+    schedule: "*/15 * * * *"
+    command: "python main.py"
+    runtime: python
+    buildCommand: ""
